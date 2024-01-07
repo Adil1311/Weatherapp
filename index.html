@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--City and Search-->
+
+    <div class="container">
+        <div class="search">
+            <form class="weather-search">
+                <input type="text" placeholder="enter city name" class="weather-form" spellcheck="false">
+            </form>
+            <div class="btn">
+                <button>
+                    <img src="../Assects/searchicon.png" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+
+        <div class="weather">
+
+            <div class="forecast">
+                <p>Sunny</p>
+            </div>
+            <div class="weather-icon">
+                <!-- <img src="/Assets/Icons/clear.png" alt=""> -->
+            </div>
+
+            <div class="city-temp">    
+                <h1 class="temp"></h1>
+                <h2 class="city"></h2>
+            </div>
+
+        </div>
+
+        <div class="details">
+            <div class="hc">
+                <img src="../Assects/humidity.png" alt="">
+                <div class="percentage">
+                    <p class="humidity">
+                    </p>
+                    <p>Humidity</p>
+                </div>
+
+            </div>
+            <div class="wc">
+                <img src="../Assects/wind.png" alt="">
+                <div class="windspeed">
+                    <p class="speed">26 K/h</p>
+                    <p>Wind</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
